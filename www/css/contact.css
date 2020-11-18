@@ -1,0 +1,92 @@
+/*CSS CONTACT*/
+
+#contact-img {
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://blog.myheritage.com/wp-content/uploads/old-letters-e1552463906281.jpg");
+}
+
+#colonne2, #colonne1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5%;
+    height: 50vh;
+   
+    background-color: rgb(62, 101, 112);
+}
+
+#centre {
+color:  rgb(62, 101, 112);
+    text-align: center;
+    background-color: white;
+    
+
+}
+
+
+/* FORMULAIRE  */
+
+
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.form-control{
+    background: transparent !important;
+
+    text-align: center;
+}
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+
+input[type=email], #message{
+    border: transparent;
+}
+input[type=submit]{
+    width: 20% !important;
+    margin: auto;
+}
+
+/*  FORMULAIRE*/
+
+#infocontact{
+    margin: auto;
+}
+
+#infocontact h2 {
+    background-color: transparent;
+}
+
+#map {
+    width: 100%;
+}
+
+#send-button-contact-form {
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: teal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 25%;
+    height: 10%;
+    padding: 20px;
+}

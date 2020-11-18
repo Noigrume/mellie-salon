@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ddd1aa !important;
+    z-index: auto;
+    font-family: "Old Standard TT", Georgia, "Times New Roman", Times, serif !important;
+    margin: auto !important;
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.background-white {
+    background-color: white;
+}
+
+/*CLASS POLICE ECRITURE*/
+.londrina{
+    font-family: 'Londrina Solid', cursive;
+}
+.yellow-tail {
+    font-family: 'Yellowtail', cursive;
+}
+
+.font-federica {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.source-serif-pro-italic {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.font-mate-sc {
+    font-family: 'Mate SC', serif;
+}
+
+#banner_top {
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px rgb(42, 93, 117) solid;
+}
+
+h1 {
+    color: darkgoldenrod;
+}
+
+#banner_top img {
+    height: 15em !important;
+}
+
+#top-img {
+    background-image: url("../img/wall-glass.jpg");
+    padding: 12% 0;
+    z-index: -1;
+    -webkit-box-shadow: inset 2px 2px 16px 12px #FFFFFF;
+    box-shadow: inset 2px 2px 16px 12px #FFFFFF;
+    -moz-box-shadow: inset 2px 2px 16px 12px #FFFFFF;
+}
+
+#top-img h2 {
+    position: relative;
+    background-color: transparent!important;
+    top: 20%;
+    /* à 50%/50% du parent référent */
+    font-size: 10vh;
+    color: teal;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bolders;
+}
+
+.big-tittle {
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 10vh;
+    width: 50%;
+}
+
+#home-top-salon-icon {
+    width: 400px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(21, 56, 70);
+    color: goldenrod;
+    text-align: center;
+}
+
+#info_footer {
+    padding: 2%;
+}
+
+h2 {
+    font-size: 10vh !important;
+    padding: 2%;
+    margin: auto;
+}
+
+.table_content {
+    padding: 15% !important;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    border-bottom: rgb(175, 175, 175) 1px dotted;
+}
+
+@media screen and (max-width: 750px) {
+    #info_footer {
+        column-count: 1;
+    }
+}
+
+/* AFFICHAGE DES ONGLETS DE NAVIGATION 
+
+.tab {
+    display: none;
+    border: 1px solid #cccccc;
+}
+*/
+
+.tab-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Grandstander', cursive;
+    font-size: larger;
+    padding: 2%;
+}
+
+@media screen and (max-width: 750px) {
+    .tab-nav {
+        display: list-item;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Grandstander', cursive;
+        font-size: larger;
+        padding: 2%;
+    }
+    .tab-nav a {
+        display: list-item;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .tab-nav li {
+        display: list-item;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.tab-nav a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bolder;
+}
+
+.tab-nav a:hover {
+    color: teal;
+    text-decoration: none;
+    transition: 1ms;
+}
+
+.tab-nav li {
+    list-style: none;
+}
+
+.tab-active {
+    display: block;
+}
+
+.tab-nav .tab-nav-active {
+    color: rgb(197, 147, 21);
+    font-size: xx-large;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    margin: 5px;
+    background-color: black;
+}
+
+#social-media {
+    justify-content: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.section-ornement-line {
+    background-color: teal;
+    display: inline-block;
+    height: 1px;
+    right: 0;
+    color: teal;
+    margin: auto;
+}
+
+.section-ornement-title {
+    color: rgb(9, 78, 95);
+    font-family: Bernadette, serif;
+    font-size: 5.2rem;
+    max-width: 170rem;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-ornement-label {
+    color: teal;
+    display: inline-block;
+    margin-left: 5%;
+    position: relative;
+    padding: 0 3rem;
+    z-index: 2;
+    font-size: larger;
+    font-size: xxx-large;
+    font-family: 'Fredericka the Great', cursive;
+    z-index: 2;
+    background-color: rgb(21, 97, 110);
+}
+
+.flex {
+    display: flex;
+}
+
+#footer-title {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    font-size: 5em !important;
+}
+
+.maketable {
+    display: table;
+    max-width: 600px;
+    margin: auto;
+}
+
+.maketable span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.border-line {
+    width: 40%;
+    position: relative;
+    display: inline-block;
+}
+
+.border-line::before {
+    content: '';
+    border-top: 1px solid goldenrod;
+    position: absolute;
+    width: 100%;
+    top: 58%;
+    left: 0;
+}
+
+.icon-between-line {
+    content: '';
+    display: block;
+    background: url(https://img.icons8.com/dusk/64/000000/paella.png) no-repeat center;
+    width: 100px;
+    text-align: center;
+}
+
+.line {
+    content: "";
+    height: 1px;
+    background-color: goldenrod;
+}

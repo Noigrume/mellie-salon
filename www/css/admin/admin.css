@@ -1,0 +1,26 @@
+#the-admin{
+    padding: 5%;
+    background-color: rgb(155, 197, 150);
+}
+
+#games-admin{
+    padding: 5%;
+    background-color: rgb(209, 136, 106);
+}
+#news-admin{
+    padding: 5%;
+    background-color: rgb(129, 205, 211);
+}
+
+tr{
+    padding: 30px;
+}
+
+td{
+    padding: 30px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}

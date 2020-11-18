@@ -1,0 +1,103 @@
+<header>
+    <h2>Ajouter un nouveau jeu</h2>
+</header>
+<section>
+    <form action="<?= buildUrl('/admin/game/new'); ?>" method="post">
+
+        <?php if (isset($error)) : ?>
+            <p class="error"><?= $error; ?></p>
+        <?php endif; ?>
+
+        <fieldset>
+            <!-- NOM DU JEU-->
+            <div>
+                <label for="name">Titre</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <!--NOM DU JEU -->
+
+
+            <!-- EXTENSION-->
+            <div>
+                <label for="extension">extension</label>
+                <input type="text" id="extension" name="extension">
+            </div>
+            EXTENSION -->
+
+
+            <!-- DIFFICULTE-->
+            <div>
+                <label for="difficulty">Difficulté</label>
+                <select name="difficulty">
+                    <?php foreach ($difficulties as $difficulty) : ?>
+                        <option value="<?= $difficulty['id_difficulty']; ?>"><?= $difficulty['min_difficulty']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+
+                <label for="difficulty_max">Difficulté</label>
+                <select name="difficulty_max">
+                <option value=""></option>
+                    <?php foreach ($difficultiesMax as $difficultyMax) : ?>
+                        <option value="<?= $difficultyMax['id_difficulty_max']; ?>"><?= $difficultyMax['max_difficulty']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <!--DIFFICULTE -->
+
+
+            <!-- NOMBRE DE JOUEURS-->
+            <div>
+                <label for="time">Temps de jeu minimum</label>
+                <input type="text" id="time" name="time">
+            </div>
+
+            <div>
+                <label for="time_max">Temps de jeu maximum</label>
+                <input type="text" id="time_max" name="time_max">
+            </div>
+            <!-- NOMBRE DE JOUEURS-->
+
+            <!-- NOMBRE DE JOUEURS
+            <div>
+                <label for="player">Nombre de joueurs minimum</label>
+                <input type="text" id="player" name="player">
+            </div>
+
+            <div>
+                <label for="player_max">Nombre de joueurs maximum</label>
+                <input type="text" id="player_max" name="player_max">
+            </div> -->
+
+            <div>
+                <label for="player">player</label>
+                <select name="player">
+                    <?php foreach ($players as $player) : ?>
+                        <option value="<?= $player['id_player']; ?>"><?= $player['min_player']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+
+                <label for="player_max">player max</label>
+                <select name="player_max">
+                    <option value=""></option>
+                    <?php foreach ($playersMax as $playerMax) : ?>
+                        <option value="<?= $playerMax['id_player_max']; ?>"><?= $playMax['max_player']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <!-- NOMBRE DE JOUEURS-->
+
+            <!-- AGE MINIMUM-->
+            <div>
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age">
+            </div>
+            <!-- AGE MINIMUM-->
+
+
+        </fieldset>
+
+        <input type="submit" value="Enregistrer">
+
+    </form>
+
+</section>

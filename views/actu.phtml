@@ -1,0 +1,87 @@
+ <!--ONGLET ACTU 
+ <div id="onglet2" class="tab">
+     <p>actu</p>
+ </div>
+ FIN ONGLET ACTU -->
+
+ <nav class="tab-news font-mate-sc">
+     <ul>
+         <li>
+             <h2><a href="#onglet1" data-tab="onglet1" class="tab-nav-active">News</a></h2>
+         </li>
+         <li>
+             <h2><a href="#onglet2" data-tab="onglet2">Images</a></h2>
+         </li>
+     </ul>
+ </nav>
+
+ <!--ONGLET news -->
+ <div id="onglet1" class="tab tab-active">
+     <div id="actualite">
+
+
+
+         <div class="filters">
+             <div class="ui-group">
+                 <div class="button-group js-radio-button-group nav-news" data-filter-group="category" id="news-category-list">
+                     <h3>Catégories</h3>
+                     <button class="button is-checked nav-news" data-filter=""> Tous </button>
+
+
+                     <?php foreach ($categories as $categorie) : ?>
+
+                         <button class="button nav-isotope" data-filter=".<?= strtolower($categorie['name']); ?>"> <?= htmlspecialchars($categorie['name']); ?></button>
+
+                     <?php endforeach; ?>
+                 </div>
+             </div>
+         </div>
+
+
+         <div id="news-column">
+             <div class="grid">
+                 <?php foreach ($news as $new) : ?>
+
+                     <!-- Pour chaque article... -->
+
+                     <div class="category grid-item  <?= strtolower($new['name']); ?> ">
+
+
+                         <img src="img/news/<?= htmlspecialchars($new['image']); ?>" alt="<?= htmlspecialchars($new['title']); ?>">
+
+
+                         <div class="description">
+                             <h1 class="font-federica"><?= htmlspecialchars($new['title']); ?></h1>
+
+                             <div><?= htmlspecialchars(mb_substr($new['content'], 0, 500, 'UTF-8')); ?></div>
+                             <p class="read-more">
+                                 <time datetime="<?= htmlspecialchars($new['createdAt']); ?>"><?= date('d/m/Y', strtotime(htmlspecialchars($new['createdAt']))); ?></time>
+                                 <div>
+                                     <p>#<?= htmlspecialchars(mb_substr($new['name'], 0, 500, 'UTF-8')); ?></p>
+                                 </div>
+                             </p>
+                         </div>
+                     </div>
+                 <?php endforeach; ?>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+ <!--ONGLET insta -->
+ <div id="onglet2" class="tab">
+     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+     <div class="elfsight-app-e567933b-f5be-47be-b842-4d3063290be8"></div>
+ </div>
+
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+ <script src="js/tea-selection.js"></script>
+ <script src="js/nav.js"> </script>
+ 
+ <script src="js/news.js"></script>

@@ -1,0 +1,111 @@
+<header>
+    <h2>Administration</h2>
+</header>
+
+<section id="the-admin">
+<h3>Administration des thés</h3>
+    <nav>
+        <a href="<?=buildUrl('/admin/tea/new');?>" title="Ajouter un thé">
+        <img src="https://img.icons8.com/cotton/64/000000/tea-1.png"/>Ajouter un thé
+        </a>
+
+    </nav>
+       <!-- Affichage le cas échéant des messages de confirmation --> 
+       <?php include VIEWS_DIR . '/inc/flash_messages.phtml'; ?>
+
+    <table>
+        <thead>
+            
+            <th scope="col">Titre</th>
+            <th scope="col">Type</th>
+            <th scope="col">Actions</th>
+        </thead>
+        <tbody>
+            <?php foreach($posts as $post): ?>
+                <tr>
+                    
+                    <td><?=htmlspecialchars($post['name']);?></td>
+                    <td><?=htmlspecialchars($post['color']); ?></td>
+                    <td>
+                    <!--    <a href="<?=buildUrl('/admin/post/edit', ['postid' => $post['postid']]);?>" title="Modifier l'article">
+                        <img src="https://img.icons8.com/fluent/48/000000/pen.png"/>
+                        </a>
+
+            -->
+                        <a href="<?=buildUrl('/admin/tea/delete', ['teaid' => $post['teaid']]);?>" title="Supprimer l'article">
+                        <img src="https://img.icons8.com/android/24/000000/trash.png"/>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>
+
+<section id="news-admin">
+<h3>Administration des actualités</h3>
+    <nav>
+        <a href="<?=buildUrl('/admin/post/new');?>" title="Ajouter une news">
+        <img src="https://img.icons8.com/officel/80/000000/news.png"/>Ajouter une news
+        </a>
+    </nav>
+    
+
+    <table>
+        <thead>
+            
+            <th scope="col">Titre</th>
+            <th scope="col">Type</th>
+            <th scope="col">Actions</th>
+        </thead>
+        <tbody>
+            <?php foreach($news as $new): ?>
+                <tr>
+                    
+                    <td><?=htmlspecialchars($new['title']);?></td>
+                    <td><?=htmlspecialchars($new['name']); ?></td>
+                    <td>
+                
+                        <a href="<?=buildUrl('/admin/post/delete', ['newsid' => $new['newsid']]);?>" title="Supprimer l'article">
+                        <img src="https://img.icons8.com/android/24/000000/trash.png"/>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>
+
+<section id="games-admin">
+<h3>Administration des jeux</h3>
+    <nav>
+        <a href="<?=buildUrl('/admin/game/new');?>" title="Ajouter un jeu">
+        <img src="https://img.icons8.com/fluent/48/000000/controller.png"/>Ajouter un jeu
+        </a>
+    </nav>
+    
+
+    <table>
+        <thead>
+            
+            <th scope="col">Titre</th>
+            <th scope="col">Type</th>
+            <th scope="col">Actions</th>
+        </thead>
+        <tbody>
+            <?php foreach($games as $game): ?>
+                <tr>
+                    
+                    <td><?=htmlspecialchars($game['age']);?></td>
+                    <td><?=htmlspecialchars($game['name']); ?></td>
+                    <td>
+                
+                        <a href="<?=buildUrl('/admin/post/delete', ['postid' => $new['newsid']]);?>" title="Supprimer l'article">
+                        <img src="https://img.icons8.com/android/24/000000/trash.png"/>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>

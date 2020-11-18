@@ -1,0 +1,99 @@
+<div id="intro-the">
+    <h3>Le mot de Mellie</h3>
+    <p>« Ce qui me rend heureuse, c'est de voir les yeux de mes clientes se régaler ! Qu'elles soient fidèles à leur infusion fétiche ou plus aventurière à découvrir la richesse et la diversités des parfums du Salon de thé, je guette cette lueur qui fait « miam » dans le regard ! 
+        Thé vert, noir, blanc, infusions... chacun a ses bienfaits et ses propriétés. Je les ai sélectionnés pour leur qualité évidemment mais aussi pour leur parfum et la générosité de leurs saveurs.
+        Pour tous ceux qui aiment profiter de l'instant, (et j'en fais partie!) je ne pouvais envisager Chez Mellie sans ses Cookies et ses Financiers ! Ce sont les gourmandises préparées par mes soins que vous retrouverez tout au long de l'année, avec leur panel de parfums pour satisfaire les plus petits comme les grands.
+        Je vous souhaite un très bon moment dans votre Salon de thé, ou une super pause parfumée dans votre canapé ! »
+
+    </p>
+
+
+</div>
+<div id="imgtest"></div>
+
+
+
+<div id="the-section">
+    <div class="flex" id="separation-icons">
+        <img src="https://img.icons8.com/cotton/64/000000/tea-cup.png" />
+        <img src="https://img.icons8.com/cotton/64/000000/tea-cup.png" />
+        <img src="https://img.icons8.com/cotton/64/000000/tea-cup.png" />
+    </div>
+    <h2 class="yellow-tail">Notre carte de thés</h2>
+    <div class=" tea-icon-centered">
+        <p> Pour découvrir et choisir vos saveurs préférées disponibles au Salon de thé Chez Mellie à Mauriac, cliquez sur les images ci-dessous.</p>
+
+        <div class="filters">
+
+            <div class="ui-group container ">
+
+                <div class="button-group js-radio-button-group" data-filter-group="category">
+
+                    <button class="button is-checked nav-isotope" data-filter="">
+                        <p class="londrina">Tous</p>
+                    </button>
+
+                    <button class="button nav-isotope " data-filter=".vert"><img src="img/green-tea.svg" alt=" intégrer SVG  avec la balise image">
+                        <p class="londrina">Vert</p>
+                    </button>
+
+                    <button class="button nav-isotope" data-filter=".blanc"><img src="img/white-tea.svg" alt=" intégrer SVG  avec la balise image">
+                        <p class="londrina">Blanc</p>
+                    </button>
+
+                    <button class="button nav-isotope" data-filter=".noir"> <img src="img/black-tea.svg" alt=" intégrer SVG  avec la balise image">
+                        <p class="londrina">Noir</p>
+                    </button>
+
+                    <button class="button nav-isotope" data-filter=".rooibos"><img src="img/rooibos.svg" alt=" intégrer SVG  avec la balise image">
+                        <p class="londrina">Rooibos</p>
+                    </button>
+
+                    <button class="button nav-isotope" data-filter=".infusion"><img src="https://img.icons8.com/plasticine/100/000000/tea.png" />
+                        <p class="londrina">Infusion</p>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid">
+        <?php $color2 = ''; ?>
+        <?php foreach ($posts as $post) : ?>
+
+            <?php $color = htmlspecialchars($post['color']); ?>
+            <?php if ($color != $color2) : ?>
+                <?php echo '<h3  id=" ' . strtoupper($color) . '" class="category grid-item grid-item--width2 font-mate-sc' . strtoupper($color) . '">' . strtoupper($color) . '</h3>'; ?>
+
+            <?php endif ?>
+            <div class="category grid-item tea-card <?= strtolower(htmlspecialchars($post['color'])); ?>">
+
+                <img class="grid-item-img" src="img/the/<?= htmlspecialchars($post['image']); ?>" alt="texte alternatif">
+                <div class="grid-item-body">
+                    <div class="grid-item-text">
+                        <h4><?= htmlspecialchars($post['name']); ?></h4>
+                        <span> Sachet de 100g. </span><br>
+                        <span>Prix : 6,00 €</span><br>
+
+                        <p><?= htmlspecialchars(mb_substr($post['description'], 0)); ?>
+                        </p>
+                    </div>
+
+                </div>
+
+                <?php $color2 = htmlspecialchars($post['color']); ?>
+            </div>
+
+        <?php endforeach; ?>
+
+    </div>
+
+</div>
+
+
+<!-- FIN ONGLET THE 
+-->
+
+<script src="js/tea-selection.js"></script>

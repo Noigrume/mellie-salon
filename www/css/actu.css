@@ -1,0 +1,179 @@
+main {
+    
+background-color: white;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 30px 7px -1px rgba(#000, .1);
+    margin-bottom: 1.6%;
+    background: white;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+   
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: pink;
+}
+
+.meta {
+    position: relative;
+    z-index: 0;
+    height: 400px;
+}
+
+
+
+
+.details, .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: dotted underline
+}
+
+ul li {
+    display: inline-block;
+}
+
+.author:before {
+    margin-right: 10px;
+    content: "\f007";
+}
+
+.date:before {
+    margin-right: 10px;
+    content: "\f133";
+}
+
+.tags ul:before {
+    content: "\f02b";
+    margin-right: 10px;
+}
+
+li {
+    margin-right: 2px;
+}
+
+.description {
+    padding: 1rem;
+    background-color:transparent;
+    color: rgb(12, 57, 68);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+p {
+    position: relative;
+    margin: 1rem 0 0;
+}
+
+
+
+#news-category-list {
+ 
+    display: list-item;
+    list-style: none;
+    text-align: right;
+
+    color: teal;
+}
+
+label {
+    display: list-item !important;
+}
+
+.tab {
+    border: none;
+}
+
+.tab-news {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+
+.tab-news ul li a {
+    margin: 0 20px 0 20px;
+    color: teal;
+}
+
+#actualite {
+    margin: auto;
+
+}
+
+
+
+.news{
+    border: 1px black solid;
+    margin: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item {
+    max-width: 450px;
+    float: left;
+    background: white;
+    border: 1px solid #333;
+    border-color: hsl(0, 0%, 76%);
+   
+  }
+
+  .grid-item img{
+      width: 100%;
+  }
+
+  .nav-news {
+      display: list-item;
+    background-color: transparent!important;
+    height: 100%;
+    
+    margin: 10px;
+
+}
+
+#onglet2{
+    background-color: rgb(180, 155, 100);
+}
+
+.ui-group .button-group {
+  
+  
+    margin: 0 auto;
+    padding: 5 5px;
+
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+
+.nav-news {
+    background-color: transparent!important;
+    margin: 10px;
+    width: 100%;
+
+}
