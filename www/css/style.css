@@ -3,9 +3,9 @@
 }
 
 html, body {
-    background-color: #ddd1aa !important;
+    background-color: #f3eee5 !important;
     z-index: auto;
-    font-family: "Old Standard TT", Georgia, "Times New Roman", Times, serif !important;
+    font-family: 'Source Serif Pro', serif !important;
     margin: auto !important;
     width: 100% !important;
     overflow-x: hidden;
@@ -39,6 +39,10 @@ html, body {
     font-family: 'Mate SC', serif;
 }
 
+.lobster-two{
+    font-family: 'Lobster Two', cursive;
+}
+
 #banner_top {
     background-color: white;
     text-align: center;
@@ -54,12 +58,12 @@ h1 {
 }
 
 #top-img {
+    height: 100vh;
     background-image: url("../img/wall-glass.jpg");
     padding: 12% 0;
     z-index: -1;
-    -webkit-box-shadow: inset 2px 2px 16px 12px #FFFFFF;
-    box-shadow: inset 2px 2px 16px 12px #FFFFFF;
-    -moz-box-shadow: inset 2px 2px 16px 12px #FFFFFF;
+    -webkit-box-shadow: inset 0px -11px 15px -9px #000000; 
+    box-shadow: inset 0px -11px 15px -9px #000000;
 }
 
 #top-img h2 {
@@ -74,11 +78,11 @@ h1 {
 }
 
 .big-tittle {
-    color: white;
+    color: rgb(255, 255, 255);
     margin: auto;
     display: block;
     text-align: center;
-    font-size: 10vh;
+    font-size: 15vh;
     width: 50%;
 }
 
@@ -147,7 +151,7 @@ tr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Grandstander', cursive;
+ 
     font-size: larger;
     padding: 2%;
 }
@@ -157,7 +161,7 @@ tr {
         display: list-item;
         justify-content: space-around;
         align-items: center;
-        font-family: 'Grandstander', cursive;
+       
         font-size: larger;
         padding: 2%;
     }

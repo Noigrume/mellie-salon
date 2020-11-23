@@ -106,9 +106,7 @@ h3 {
 }
 
 #home-schedule-area {
-    background: url("https://images.pexels.com/photos/1487703/pexels-photo-1487703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-size: cover;
+margin: auto;
     height: 100%;
     padding: 3em 0;
 }
@@ -117,7 +115,6 @@ h3 {
     height: 100%;
     font-weight: 400;
     color: white;
-    max-width: 700px;
     margin: auto;
     border: 1px solid rgb(206, 206, 206);
     padding: 2px;
@@ -129,12 +126,12 @@ h3 {
 #home-schedule-box-inner {
     border: 1px solid rgb(255, 255, 255);
     padding: 20px 20px 20px 20px;
-    background-color: rgba(211, 162, 37, 0.637);
+    background-color: rgba(201, 153, 34, 0.767);
     color: rgb(255, 255, 255);
 }
 
 #home-schedule-box-inner td {
-    text-align: center;
+    text-align: left;
 }
 
 table {
@@ -253,9 +250,9 @@ img {
 }
 
 #welcome-img-paragraph {
-    background-image: url("https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.0-9/p960x960/117889556_581427585887285_3597289322416192536_o.jpg?_nc_cat=104&_nc_sid=2d5d41&_nc_ohc=H7oWH93EwWMAX8ga6km&_nc_ht=scontent.fcdg1-1.fna&tp=6&oh=f37df669ba0cfffaaeb59b481efbb5ef&oe=5F9F6E98");
+    background-image: url("../img/teapot.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 70%;
+    width: 100%;
     background-position: center;
 }
